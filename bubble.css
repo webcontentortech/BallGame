@@ -1,8 +1,137 @@
 #main{
 	height: 350px;
 	width: 320px;
-	border: solid red;
-	border-radius: 150px;
-	border-color: red;
+	border: solid;
+	border-color: black;
 	position: relative;
 }
+#main1{
+	height: 100px;
+	width: 320px;
+	border: solid;
+	border-color: black;
+}
+
+span{
+	width:20px;
+	height: 350px;
+	display: block;
+	float:right;
+}
+#ball1{
+    background:#DF0101;
+    border-radius:20px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball2{
+    background:#F7FE2E;
+    border-radius:20px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball3{
+    background:#01DFD7;
+    border-radius:20px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball4{
+    background:#3ADF00;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball5{
+    background:#F7FE2E;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball6{
+    background:#01DFD7;
+    border-radius:30px;
+    height:20px;
+    
+    top:0px;
+    width:20px;
+}
+#ball7{
+    background:#DF0101;
+    border-radius:30px;
+    height:20px;
+   
+    top:0px;
+    width:20px;
+}
+#ball8{
+    background:#3ADF00;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball9{
+    background:#3ADF00;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball10{
+    background:#01DFD7;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball11{
+    background:#F7FE2E;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball12{
+    background:#DF0101;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball13{
+    background:#DF0101;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball14{
+    background:#F7FE2E;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball15{
+    background:#01DFD7;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+#ball16{
+    background:#3ADF00;
+    border-radius:30px;
+    height:20px;
+    top:0px;
+    width:20px;
+}
+
+
+
