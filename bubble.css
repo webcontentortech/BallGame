@@ -27,9 +27,9 @@ span{
   	border-right: 10px solid transparent;
 	border-bottom: 10px solid black;
 }
-#ball{
-	height: 20px;
+#ball1{
 	width: 20px;
-	float: left;
+	
+	float:left;
 	margin-top: 300px;
 }
