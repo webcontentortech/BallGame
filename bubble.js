@@ -1,14 +1,15 @@
 $(document).ready(function() {
     var colorValue;
-    var randomBall, id=1;
+    var randomBall, 
+    var id=1;
     var ranball;
+    var colorval;
     var number=["images/blue.png","images/green.png","images/red.png","images/yellow.png"];
     run();
     test();
     keyTest();
     $('#start').click(function(){
-        $("#ball").animate({'marginTop': "-20"}, 1000, imge());
-        myVar = setTimeout(test, 4000);
+        $("#ball1").animate({'marginTop': "-20"}, 100, imge());
     });
     
     $('#main1').hide(0).delay(2000).show(0);
@@ -24,33 +25,35 @@ $(document).ready(function() {
         for (var i = 16; i >=1; --i) {
             colorValue=Math.floor(Math.random()*number.length);
             document.getElementById('image'+i).src = number[colorValue];
+            colorval = $('#image'+i).attr('src');
         }
     }
-    console.log(colorValue);
+    console.log(colorval);
     function test(){
             randomBall=Math.floor(Math.random()*number.length);
             document.getElementById('ball'+id).src = number[randomBall];
-            id++;
+            ranball= $('#ball'+id).attr('src');
     }
-    console.log(randomBall);
+    console.log(ranball);
     function imge(){
-        if (randomBall == colorValue) {
-            var x = colorValue;
-            var z = $('#image'+x).find("span");
-            if (randomBall == 0) {
-                $( '#image'+(x+1) ).fadeOut("5000");
-            }else{
-                $( '#image'+x ).fadeOut("5000");
-            }
-        } 
-        console.log(z);
+        if (ranball === colorval) {
+            //var x = colorval;
+            //var z = $('#image'+x).find("span");
+            $( '#image'+id ).fadeOut("slow");
+            $('#ball1').fadeOut("slow");
+
+        }else{
+
+            $( "#ball1" ).append( document.createTextNode( colorval ) );
+        }
+        console.log('image'+id);
     }
 
     function keyTest(){
         $(document).keydown(function(e) {
             switch (e.which) {
                 case 37: 
-                    test();
+                    $('#ball1').animate({ 'marginLeft': '-=20' });
                     break;
                 case 39:
                     $('#ball1').animate({ 'marginLeft': '+=20' });
@@ -58,5 +61,7 @@ $(document).ready(function() {
             }
         });
     }
+
+
 });
 
